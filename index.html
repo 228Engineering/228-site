@@ -1,80 +1,156 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Josh Fryer Ltd | Broadcast Engineering</title>
-<style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f5f5f5;
-    color: #333;
-}
-.container {
-    max-width: 900px;
-    margin: auto;
-    padding: 60px 20px;
-}
-h1 {
-    font-size: 36px;
-    margin-bottom: 5px;
-}
-h2 {
-    margin-top: 50px;
-    font-size: 24px;
-}
-.card {
-    background: white;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-.footer {
-    margin-top: 60px;
-    font-size: 14px;
-    color: #777;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josh Fryer Ltd | Broadcast & XR Engineering</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-accent: #00f2ff; /* XR Neon Cyan */
+            --glass-bg: rgba(15, 15, 20, 0.85); 
+            --text-main: #f0f0f0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-main);
+            /* This points to your specific GitHub image file */
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('PXL_20241003_133021225.MP.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+
+        header {
+            text-align: left;
+            margin-bottom: 50px;
+            border-left: 4px solid var(--primary-accent);
+            padding-left: 25px;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 8vw, 4rem);
+            margin: 0;
+            letter-spacing: -2px;
+            text-transform: uppercase;
+            text-shadow: 0 0 20px rgba(0, 242, 255, 0.3);
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: var(--primary-accent);
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 5px;
+        }
+
+        h2 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #888;
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+
+        .card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 35px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            line-height: 1.7;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin: 0;
+            list-style-type: square;
+        }
+
+        li::marker {
+            color: var(--primary-accent);
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        .contact-link {
+            color: var(--primary-accent);
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .contact-link:hover {
+            text-shadow: 0 0 10px var(--primary-accent);
+            text-decoration: underline;
+        }
+
+        .footer {
+            margin-top: 60px;
+            font-size: 0.75rem;
+            opacity: 0.5;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 40px 20px; }
+        }
+    </style>
 </head>
 <body>
 
 <div class="container">
 
-<h1>Josh Fryer Ltd</h1>
-<p><strong>Broadcast Video Engineering & Technical Services</strong></p>
+    <header>
+        <h1>Josh Fryer Ltd</h1>
+        <p class="tagline">Broadcast & XR Engineering</p>
+    </header>
 
-<h2>About</h2>
-<div class="card">
-<p>
-Josh Fryer Ltd provides professional broadcast video engineering services across live events,
-studio productions, XR and virtual production environments, and technical installations.
-The company delivers reliable, technically robust solutions for live and studio workflows.
-</p>
-</div>
+    <h2>Expertise</h2>
+    <div class="card">
+        <p>
+            Josh Fryer Ltd provides high-end broadcast video engineering services, specializing in 
+            <strong>live studio productions</strong> and <strong>XR / Virtual Production</strong> environments. 
+            We bridge the gap between traditional broadcast reliability and cutting-edge technical innovation.
+        </p>
+    </div>
 
-<h2>Services</h2>
-<div class="card">
-<ul>
-<li>Broadcast Engineering & Live Studio Support</li>
-<li>Live Events & Corporate Productions</li>
-<li>XR / Virtual Production Workflows</li>
-<li>Technical Consultancy & System Support</li>
-</ul>
-</div>
+    <h2>Core Services</h2>
+    <div class="card">
+        <ul>
+            <li>XR & Virtual Production Technical Workflows</li>
+            <li>Broadcast Engineering & Live Multi-Cam Support</li>
+            <li>Technical Consultancy for Studio Installations</li>
+            <li>Real-time Engine Integration & System Support</li>
+        </ul>
+    </div>
 
-<h2>Contact</h2>
-<div class="card">
-<p><strong>Email:</strong> jfryer@228engineering.com</p>
-<p><strong>Phone:</strong> +44 7982 034288</p>
-<p><strong>Business Type:</strong> UK Private Limited Company</p>
-</div>
+    <h2>Contact</h2>
+    <div class="card">
+        <p><strong>Email:</strong> <a href="mailto:jfryer@228engineering.com" class="contact-link">jfryer@228engineering.com</a></p>
+        <p><strong>Business Type:</strong> UK Private Limited Company</p>
+    </div>
 
-<div class="footer">
-© 2026 Josh Fryer Ltd. All rights reserved.
-</div>
+    <div class="footer">
+        &copy; 2026 Josh Fryer Ltd. All rights reserved.
+    </div>
 
 </div>
 
